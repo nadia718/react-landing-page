@@ -81,5 +81,30 @@ Nadia
 
 Built with ❤️ using React.js, Vite, JavaScript, HTML, and CSS.
 
+##  Project Screenshots
+
+### Hero Section
+
+![Hero](./screenshots/hero-section.png)
+
+### About Section
+
+![About](./screenshots/about-section.png)
+
+### Services Section
+
+![Services](./screenshots/services-section.png)
+
+### FAQ Section
+
+![FAQ](./screenshots/faq-section.png)
+
+### Contact Section
+
+![Contact](./screenshots/contact-section.png)
+
+### Footer Section
+
+![Footer](./screenshots/footer-section.png)
 
 
