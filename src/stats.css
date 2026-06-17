@@ -1,0 +1,112 @@
+.stats {
+  position: relative;
+  z-index: 2;
+  margin-top: -5rem;
+  padding: 0 clamp(1.25rem, 4vw, 2rem) 3.5rem;
+  background: transparent;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  min-height: 100px;
+}
+
+.stat-item:not(:last-child) {
+  border-right: 1px solid var(--color-border);
+}
+
+.stat-value {
+  display: block;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 140px;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    margin-top: -3.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0;
+    padding: 2rem 1.25rem;
+  }
+
+  .stat-item {
+    min-height: auto;
+    padding: 1rem 0.75rem;
+    border-right: none !important;
+  }
+
+  .stat-item:nth-child(odd) {
+    border-right: 1px solid var(--color-border);
+  }
+
+  .stat-item:nth-child(1),
+  .stat-item:nth-child(2) {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    margin-top: -2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .stat-item {
+    padding: 1.25rem 0;
+    border-right: none !important;
+  }
+
+  .stat-item:not(:last-child) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .stat-item:nth-child(odd) {
+    border-right: none;
+  }
+
+  .stat-item:nth-child(1),
+  .stat-item:nth-child(2) {
+    padding-bottom: 1.25rem;
+  }
+
+  .stat-label {
+    max-width: none;
+  }
+}

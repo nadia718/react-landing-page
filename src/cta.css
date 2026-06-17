@@ -1,0 +1,41 @@
+.cta-band {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
+.cta-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cta-inner p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.0625rem;
+}
+
+.cta-btn {
+  background: #fff;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.cta-btn:hover {
+  background: var(--color-bg-alt);
+}
+
+@media (max-width: 600px) {
+  .cta-inner {
+    text-align: center;
+    justify-content: center;
+  }
+}
